@@ -206,6 +206,7 @@ table {
 
 body {
   font-family: "Roboto", var(--system-fonts), sans-serif;
+  background-color: var(--bg-color);
 }
 
 a,
@@ -227,6 +228,7 @@ a,
   --secondary-color: hsl(var(--secondary-hue), 94%, 12%);
   --white: #fff;
   --black: hsl(0, 0%, 0%);
+  --bg-color: #f5f5f5;
   --text-color: hsl(var(--black), 0%, 29%);
 }
 
@@ -304,6 +306,13 @@ h1 {
   line-height: 24px;
   color: var(--text-color);
   text-transform: uppercase;
+}
+.tag:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: translateY(30%);
+  background: url("../icons/tag.svg") no-repeat center / 20px 20px;
 }
 /* ============================ COMMON END ================================= */
 
@@ -433,3 +442,42 @@ h1 {
   padding: 300px 0;
 }
 /* ============================ HERO END ================================= */
+
+/* ============================ ABOUT START ================================= */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  background: var(--white) no-repeat center;
+  margin: -100px 0;
+  padding: 80px;
+  min-height: 700px;
+  position: relative;
+}
+
+.about-tag,
+.about-title {
+  margin-bottom: 32px;
+}
+
+.about-text {
+  margin-bottom: 55px;
+}
+
+.about img {
+  position: absolute;
+}
+
+.about-container::after {
+  content: "";
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 640px;
+  height: 450px;
+  background: url("../img/about-deco.webp") no-repeat 0 0 / 640px 450px;
+}
+/* ============================ ABOUT END ================================= */
