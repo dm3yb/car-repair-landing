@@ -206,6 +206,7 @@ table {
 
 body {
   font-family: "Roboto", var(--system-fonts), sans-serif;
+  background-color: var(--secondary-color);
 }
 
 a,
@@ -226,7 +227,8 @@ a,
   --action-color: hsl(var(--primary-hue), 89%, 41%);
   --secondary-color: hsl(var(--secondary-hue), 94%, 12%);
   --white: #fff;
-  --black: #000;
+  --black: hsl(0, 0%, 0%);
+  --text-color: hsl(var(--black), 0%, 29%);
 }
 
 .container {
@@ -249,7 +251,6 @@ a,
   font-weight: 700;
   font-size: 12px;
   padding: 13px;
-  margin-top: 100px;
   background: linear-gradient(
     -70deg,
     var(--primary-color) 40px,
@@ -264,7 +265,43 @@ a,
   height: 48px;
 }
 
-.button:hover { 
+.button:hover {
   background: hsla(var(--primary-hue), 91%, 47%, 0.9);
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 900;
+  color: var(--white);
+}
+
+.title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  color: var(--secondary-color);
+}
+
+.subtitle {
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 900;
+  color: var(--secondary-color);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  color: var(--text-color);
+  text-transform: uppercase;
 }
 /* ============================ COMMON END ================================= */
