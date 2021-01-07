@@ -206,7 +206,6 @@ table {
 
 body {
   font-family: "Roboto", var(--system-fonts), sans-serif;
-  background-color: var(--secondary-color);
 }
 
 a,
@@ -270,6 +269,8 @@ a,
 }
 
 h1 {
+  width: 580px;
+  margin-bottom: 50px;
   font-size: 56px;
   line-height: 56px;
   font-weight: 900;
@@ -307,8 +308,15 @@ h1 {
 /* ============================ COMMON END ================================= */
 
 /* ============================ HEADER START ================================= */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .header,
-.wrap {
+.navbar {
   margin-top: 30px;
 }
 
@@ -406,10 +414,10 @@ h1 {
   content: "2";
   position: absolute;
   top: -10px;
-  right: 10px;
+  right: 12%;
   width: 20px;
   height: 20px;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -418,3 +426,10 @@ h1 {
   background: var(--primary-color);
 }
 /* ============================ NAVBAR END ================================= */
+
+/* ============================ HERO START ================================= */
+.hero {
+  background: url("../img/banner-bg.webp") no-repeat 50% / cover;
+  padding: 300px 0;
+}
+/* ============================ HERO END ================================= */
