@@ -305,3 +305,116 @@ h1 {
   text-transform: uppercase;
 }
 /* ============================ COMMON END ================================= */
+
+/* ============================ HEADER START ================================= */
+.header,
+.wrap {
+  margin-top: 30px;
+}
+
+.logo img {
+  width: 175px;
+  height: 40px;
+}
+
+.holder,
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.header-nav-title {
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.header-nav-inf:nth-child(n + 2) {
+  padding: 0 30px;
+}
+/* ============================ HEADER END ================================= */
+
+/* ============================ NAVBAR START ================================= */
+.navbar,
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.nav a {
+  width: 100%;
+  white-space: nowrap;
+  padding: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav img {
+  padding: 2px 0px 0 5px;
+}
+
+.dropmenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  padding-top: 10px;
+  background-color: var(--white);
+}
+
+.dropmenu a {
+  padding: 15px;
+}
+
+.nav li:hover > .dropmenu,
+.nav li:focus-within > .dropmenu {
+  transform: translateY(10px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.nav-control,
+.shoping-card {
+  padding: 0 22px;
+}
+
+.shoping-card {
+  position: relative;
+}
+
+.shoping-card::before {
+  content: "2";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: var(--primary-color);
+}
+/* ============================ NAVBAR END ================================= */
