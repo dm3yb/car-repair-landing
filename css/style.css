@@ -234,4 +234,37 @@ a,
   max-width: 1020px;
   margin: 0 auto;
 }
+
+.button {
+  width: 212px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 13px;
+  margin-top: 100px;
+  background: linear-gradient(
+    -70deg,
+    var(--primary-color) 40px,
+    var(--action-color) 40px
+  );
+}
+.button.btn-small {
+  width: 145px;
+  height: 48px;
+}
+.button.btn-medium {
+  height: 48px;
+}
+
+.button:hover { 
+  background: hsla(var(--primary-hue), 91%, 47%, 0.9);
+}
 /* ============================ COMMON END ================================= */
