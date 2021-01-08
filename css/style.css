@@ -230,6 +230,7 @@ a,
   --black: hsl(0, 0%, 0%);
   --bg-color: #f5f5f5;
   --text-color: hsl(var(--black), 0%, 29%);
+  --shadow: 0 10px 15px 2px hsla(var(--secondary-hue), 29%, 23%, 0.3);
 }
 
 .container {
@@ -558,3 +559,65 @@ h1 {
   }
 }
 /* ============================ PROMISE END ================================= */
+
+/* ============================ CARDS START ================================= */
+.cards {
+  padding-top: 110px;
+  position: relative;
+}
+
+.cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 450px;
+  background: url("../img/top-left-deco.webp") no-repeat 0 0 / 640px 450px;
+}
+
+.cards::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 640px;
+  height: 450px;
+  background: url("../img/bottom-right-deco.webp") no-repeat 0 0 / 640px 450px;
+}
+
+.card-title {
+  margin-bottom: 70px;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.card {
+  width: 325px;
+  text-align: center;
+  padding: 50px;
+  background-color: var(--white);
+  margin-bottom: 20px;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow);
+}
+
+.card-subtitle {
+  margin: 25px 0;
+}
+
+.cards > .container > .btn-small {
+  margin: auto;
+}
+/* ============================ CARDS END ================================= */
