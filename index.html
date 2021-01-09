@@ -22,7 +22,7 @@
               <li class="header-nav-title nav-title-two">Call Us</li>
               <li>(555) Car-Repair</li>
             </ul>
-            <button class="button">
+            <button class="button" type="submit">
               Make an Appointment<img
                 src="./icons/arrow-btn.svg"
                 alt="arrow-btn"
@@ -71,7 +71,7 @@
     <div class="hero">
       <div class="container">
         <h1>Top notch service is our main auto motive</h1>
-        <button class="button btn-medium">
+        <button class="button btn-medium" type="submit">
           Make an Appointment<img src="./icons/arrow-btn.svg" alt="arrow-btn" />
         </button>
       </div>
@@ -215,6 +215,57 @@
         <button class="button btn-small">
           Learn More<img src="./icons/arrow-btn.svg" alt="arrow btn" />
         </button>
+      </div>
+    </div>
+    <div class="appointment">
+      <div class="container">
+        <div class="form-wrap">
+          <div class="form-container">
+            <h2 class="form-title title">Make an appointment</h2>
+            <form name="form1" class="form-box">
+              <input
+                class="appointment-form"
+                type="text"
+                name="name"
+                required
+                placeholder="Name"
+              />
+              <input
+                class="appointment-form"
+                type="email"
+                name="email"
+                required
+                placeholder="Email"
+              />
+              <input
+                class="appointment-form"
+                type="tel"
+                name="tel"
+                required
+                placeholder="Phone Number"
+              />
+              <input
+                class="appointment-form"
+                type="text"
+                name="service"
+                required
+                placeholder="Select Service"
+              /> 
+              <textarea class="appointment-form comment-form"
+              type="comment"
+              name="comment"
+              placeholder="Tell us about the car needing service(s)"></textarea>
+              <button class="button btn-medium appointment-btn" type="submit">
+                Make an Appointment<img src="./icons/arrow-btn.svg" alt="" />
+              </button>
+            </form>
+          </div>
+          <div class="appointment-inf">
+            <h2 class="appointment-title title">Maxime placeat facere possimus omnis </h2>
+            <h2 class="appointment-number title">17k</h2>
+            <p class="appointment-subtitle subtitle">customers served (and counting)</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
