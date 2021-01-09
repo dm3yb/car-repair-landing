@@ -236,6 +236,7 @@ a,
   --white: #fff;
   --black: hsl(0, 0%, 0%);
   --gray: #f5f5f5;
+  --green: #21C613;
   --text-color: hsl(var(--black), 0%, 29%);
   --shadow: 0 10px 15px 2px hsla(var(--secondary-hue), 29%, 23%, 0.3);
 }
@@ -322,6 +323,18 @@ h1 {
   height: 20px;
   transform: translateY(30%);
   background: url("../icons/tag.svg") no-repeat center / 20px 20px;
+}
+.square-contents{
+  background: var(--white) no-repeat center;
+  margin: -100px 0;
+  padding: 80px;
+  min-height: 700px;
+  position: relative;
+}
+
+.square-contents img {
+  width: 860px;
+  position: absolute;
 }
 /* ============================ COMMON END ================================= */
 
@@ -476,20 +489,8 @@ h1 {
   align-items: center;
 }
 
-.about-container {
-  background: var(--white) no-repeat center;
-  margin: -100px 0;
-  padding: 80px;
-  min-height: 700px;
-  position: relative;
-}
-
 .about-title {
   margin-bottom: 32px;
-}
-
-.about-container img {
-  position: absolute;
 }
 
 .about-text {
@@ -656,7 +657,8 @@ h1 {
 }
 
 .form-wrap {
-  padding: 150px 0;
+  padding-top: 130px;
+  padding-bottom: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -725,3 +727,74 @@ h1 {
   font-weight: normal;
 }
 /* ============================ APPOINTMENT END ================================= */
+
+/* ============================ GALLERY START ================================= */
+.gallery{
+  position: relative;
+}
+
+.gallery::before {
+  content: "";
+  bottom: -20%;
+  left: 50;
+  position: absolute;
+  width: 640px;
+  height: 450px;
+  background: url("../img/bottom-left-deco.webp") no-repeat 0 0 / 640px 450px;
+}
+
+.gallery-title{
+  margin-bottom: 60px;
+}
+
+.gallery-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 60px;
+}
+
+.gallery-nav li{
+  position: relative;
+}
+
+.gallery-nav > li > a{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-nav > li > a::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background: var(--primary-color) no-repeat;
+  transition: .25s;
+}
+
+.gallery-nav > li > a:hover::before{
+  width: 150%;
+}
+
+.gallery-nav a:hover{
+  color: var(--primary-color);
+}
+
+.circle{
+  position: relative;
+}
+
+.circle::after{
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+}
+/* ============================ GALLERY END ================================= */
