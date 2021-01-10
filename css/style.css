@@ -866,6 +866,10 @@ h1 {
   justify-content: space-between;
 }
 
+.impact-inf {
+  padding-top: 110px;
+}
+
 .impact-inf-wrap img {
   margin-top: -70px;
 }
