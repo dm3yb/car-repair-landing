@@ -236,7 +236,7 @@ a,
   --white: #fff;
   --black: hsl(0, 0%, 0%);
   --gray: #f5f5f5;
-  --green: #21C613;
+  --green: #21c613;
   --text-color: hsl(var(--black), 0%, 29%);
   --shadow: 0 10px 15px 2px hsla(var(--secondary-hue), 29%, 23%, 0.3);
 }
@@ -324,7 +324,7 @@ h1 {
   transform: translateY(30%);
   background: url("../icons/tag.svg") no-repeat center / 20px 20px;
 }
-.square-contents{
+.square-contents {
   background: var(--white) no-repeat center;
   margin: -100px 0;
   padding: 80px;
@@ -729,13 +729,13 @@ h1 {
 /* ============================ APPOINTMENT END ================================= */
 
 /* ============================ GALLERY START ================================= */
-.gallery{
+.gallery {
   position: relative;
 }
 
 .gallery::before {
   content: "";
-  bottom: -20%;
+  bottom: -33%;
   left: 50;
   position: absolute;
   width: 640px;
@@ -743,11 +743,11 @@ h1 {
   background: url("../img/bottom-left-deco.webp") no-repeat 0 0 / 640px 450px;
 }
 
-.gallery-title{
+.gallery-title {
   margin-bottom: 60px;
 }
 
-.gallery-nav{
+.gallery-nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -755,40 +755,40 @@ h1 {
   margin-bottom: 60px;
 }
 
-.gallery-nav li{
+.gallery-nav li {
   position: relative;
 }
 
-.gallery-nav > li > a{
+.gallery-nav > li > a {
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
 }
 
-.gallery-nav > li > a::before{
+.gallery-nav > li > a::before {
   content: "";
   position: absolute;
   bottom: 0;
   width: 0;
   height: 4px;
   background: var(--primary-color) no-repeat;
-  transition: .25s;
+  transition: 0.25s;
 }
 
-.gallery-nav > li > a:hover::before{
+.gallery-nav > li > a:hover::before {
   width: 150%;
 }
 
-.gallery-nav a:hover{
+.gallery-nav a:hover {
   color: var(--primary-color);
 }
 
-.circle{
+.circle {
   position: relative;
 }
 
-.circle::after{
-  content: '';
+.circle::after {
+  content: "";
   position: absolute;
   top: -3px;
   right: -7px;
@@ -798,3 +798,44 @@ h1 {
   background: var(--green);
 }
 /* ============================ GALLERY END ================================= */
+
+/* ============================ CUSTOMERS START ================================= */
+.customers {
+  padding-top: 320px;
+  padding-bottom: 210px;
+}
+
+.customers-title {
+  width: 325px;
+}
+
+.customers-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-box {
+  width: 325px;
+  padding: 45px;
+  background-color: var(--white);
+  transition: 0.3s;
+}
+
+.customers-box:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow);
+}
+
+.customers-text {
+  margin-bottom: 30px;
+}
+
+.customers-user {
+  display: flex;
+  align-items: center;
+}
+
+.customers-user img {
+  margin-right: 17px;
+}
+/* ============================ CUSTOMERS END ================================= */
