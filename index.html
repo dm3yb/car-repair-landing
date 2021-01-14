@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Car Repair</title>
+    <title>Car Repair - Solving Your Problems</title>
   </head>
   <body>
     <header class="header">
@@ -16,16 +16,22 @@
           <div class="header-nav">
             <ul class="header-nav-inf">
               <li class="header-nav-title">Service Hours</li>
-              <li>Mon - Sat: 7:00 am - 6:00 pm</li>
+              <li>
+                <a href="https://goo.gl/maps/BFQRzR4sKBGGrwoy6" target="_blank" title="Service Hours" class="nav-link"
+                  >Mon - Sat: 7:00 am - 6:00 pm</a
+                >
+              </li>
             </ul>
             <ul class="header-nav-inf">
               <li class="header-nav-title nav-title-two">Call Us</li>
-              <li>(555) Car-Repair</li>
+              <li>
+                <a href="tel:555-765-4321" class="nav-link" title="Mobile Number">(555) Car-Repair</a>
+              </li>
             </ul>
             <button class="button" type="submit">
               Make an Appointment<img
                 src="./icons/arrow-btn.svg"
-                alt="arrow-btn"
+                alt="arrow button"
               />
             </button>
           </div>
@@ -33,7 +39,7 @@
         <nav class="navbar">
           <ul class="nav">
             <li>
-              <a href="#"
+              <a href="javascript:void(0)"
                 >Services<img src="./icons/down-arrow.svg" alt="dropdown arrow"
               /></a>
               <ul class="dropmenu">
@@ -48,8 +54,8 @@
             <li><a href="#">Estimates</a></li>
             <li><a href="#">Reviews</a></li>
             <li>
-              <a href="#"
-                >Shop<img src="./icons/down-arrow.svg" alt="dropdown arrow"
+              <a href="javascript:void(0)"
+                >Shop<img src="./icons/down-arrow.svg" alt="dropdown-arrow"
               /></a>
               <ul class="dropmenu">
                 <li><a href="#">Spare Parts</a></li>
@@ -60,9 +66,19 @@
             <li><a href="#">About</a></li>
           </ul>
           <div class="nav-control">
-            <img src="./icons/search.svg" alt="search icon" />
-            <a href="#" class="shoping-card"
-              ><img src="./icons/shopping_cart.svg" alt="shoping-card"
+            <input
+              type="search"
+              name="search"
+              class="searched"
+              placeholder="Search on Web"
+            />
+            <button class="search-btn" type="submit">
+              <img src="./icons/search.svg" alt="" />
+            </button>
+            <a href="#" class="shopping-cart"
+              ><img
+                src="./icons/shopping_cart.svg"
+                alt="Shopping Cart Link Icon"
             /></a>
           </div>
         </nav>
@@ -72,16 +88,19 @@
       <div class="container">
         <h1>Top notch service is our main auto motive</h1>
         <button class="button btn-medium" type="submit">
-          Make an Appointment<img src="./icons/arrow-btn.svg" alt="arrow-btn" />
+          Make an Appointment<img
+            src="./icons/arrow-btn.svg"
+            alt="arrow button"
+          />
         </button>
       </div>
     </div>
-    <div class="about">
-      <div class="container square-contents">
-        <p class="tag">Who we are</p>
-        <h2 class="about-title title">
+    <section class="about">
+      <div class="container square-contents about-square">
+        <h2 class="tag">Who we are</h2>
+        <h3 class="about-title title">
           Nemo enim ipsam voluptatem quia voluptas in proident
-        </h2>
+        </h3>
         <p class="about-text text">
           Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
           suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis
@@ -89,20 +108,27 @@
           nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
           voluptas nulla pariatur.
         </p>
-        <img src="./img/about-img.webp" alt="" />
       </div>
-    </div>
-    <div class="promise">
+      <img
+        width="1"
+        height="1"
+        load="lazy"
+        src="./img/about-img.webp"
+        alt="About Image"
+      />
+    </section>
+
+    <section class="promise">
       <div class="container">
-        <p class="tag">Our Promise To You</p>
-        <h2 class="promise-title title">Sed perspiciatis omnis iste natus</h2>
+        <h2 class="tag">Our Promise To You</h2>
+        <h3 class="promise-title title">Sed perspiciatis omnis iste natus</h3>
         <div class="promise-wrap">
           <div class="promise-box">
-            <img src="./icons/promise-icon-one.svg" alt="" />
+            <img src="/icons/promise-icon-one.svg" alt="Promise Quality Icon" />
             <div class="promise-box-inf">
-              <h2 class="promise-subtitle subtitle">
+              <h4 class="promise-subtitle subtitle">
                 Quality service. Everytime.
-              </h2>
+              </h4>
               <p class="text">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium corrupti quos dolores et quas.
@@ -110,11 +136,14 @@
             </div>
           </div>
           <div class="promise-box">
-            <img src="./icons/promise-icon-two.svg" alt="" />
+            <img
+              src="/icons/promise-icon-two.svg"
+              alt="Promise Services Icon"
+            />
             <div class="promise-box-inf">
-              <h2 class="promise-subtitle subtitle">
+              <h4 class="promise-subtitle subtitle">
                 Services by certified pros.
-              </h2>
+              </h4>
               <p class="text">
                 Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
                 sed quia non numquam eius modi tempora incidunt.
@@ -122,11 +151,14 @@
             </div>
           </div>
           <div class="promise-box">
-            <img src="./icons/promise-icon-three.svg" alt="" />
+            <img
+              src="/icons/promise-icon-three.svg"
+              alt="Promise Community Icon"
+            />
             <div class="promise-box-inf">
-              <h2 class="promise-subtitle subtitle">
+              <h4 class="promise-subtitle subtitle">
                 Real people. Honest work.
-              </h2>
+              </h4>
               <p class="text">
                 Quis autem vel eum iure reprehenderit qui in ea voluptate velit
                 esse quam nihil molestiae consequatur illum.
@@ -135,26 +167,25 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="video-wrap">
+    </section>
+    <section class="video-wrap">
       <div class="container">
-        <h2 class="video-title title">
-          Nemo enim ipsam voluptatem quia voluptas in proident
-        </h2>
-        <a href="#" class="play-btn"
-          ><img src="./icons/play-btn.svg" alt=""
-        /></a>
+        <div class="video-disc">
+          <h2 class="video-title light-title title">
+            Nemo enim ipsam voluptatem quia voluptas in proident
+          </h2>
+          <button class="play-btn"></button>
+        </div>
       </div>
-    </div>
-    <div class="cards deco-btm">
+    </section>
+    <section class="cards deco-btm">
       <div class="container">
-        <p class="tag">Our Services</p>
-        <h2 class="card-title title">Sed perspiciatis omnis iste natus</h2>
+        <h2 class="tag">Our Services</h2>
+        <h3 class="card-title title">Sed perspiciatis omnis iste natus</h3>
         <div class="card-wrap">
           <a href="#">
-            <div class="card">
-              <img src="./icons/card1.svg" alt="" />
-              <h2 class="card-subtitle subtitle">Multi Point Inspections</h2>
+            <div class="card card1">
+              <h4 class="card-subtitle subtitle">Multi Point Inspections</h4>
               <p class="text">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium corrupti quos dolores et quas.
@@ -162,9 +193,8 @@
             </div>
           </a>
           <a href="#">
-            <div class="card">
-              <img src="./icons/card2.svg" alt="" />
-              <h2 class="card-subtitle subtitle">Multi Point Inspections</h2>
+            <div class="card card2">
+              <h4 class="card-subtitle subtitle">Multi Point Inspections</h4>
               <p class="text">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium corrupti quos dolores et quas.
@@ -172,9 +202,8 @@
             </div>
           </a>
           <a href="#">
-            <div class="card">
-              <img src="./icons/card3.svg" alt="" />
-              <h2 class="card-subtitle subtitle">Auto Repair</h2>
+            <div class="card card3">
+              <h4 class="card-subtitle subtitle">Auto Repair</h4>
               <p class="text">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium corrupti quos dolores et quas.
@@ -182,9 +211,8 @@
             </div>
           </a>
           <a href="#">
-            <div class="card">
-              <img src="./icons/card4.svg" alt="" />
-              <h2 class="card-subtitle subtitle">Tires</h2>
+            <div class="card card4">
+              <h4 class="card-subtitle subtitle">Tires</h4>
               <p class="text">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium corrupti quos dolores et quas.
@@ -192,9 +220,8 @@
             </div>
           </a>
           <a href="#">
-            <div class="card">
-              <img src="./icons/card5.svg" alt="" />
-              <h2 class="card-subtitle subtitle">Service Warranty</h2>
+            <div class="card card5">
+              <h4 class="card-subtitle subtitle">Service Warranty</h4>
               <p class="text">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium corrupti quos dolores et quas.
@@ -202,9 +229,8 @@
             </div>
           </a>
           <a href="#">
-            <div class="card">
-              <img src="./icons/card6.svg" alt="" />
-              <h2 class="card-subtitle subtitle">Shop Online</h2>
+            <div class="card card6">
+              <h4 class="card-subtitle subtitle">Shop Online</h4>
               <p class="text">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium corrupti quos dolores et quas.
@@ -213,73 +239,90 @@
           </a>
         </div>
         <button class="button btn-small">
-          Learn More<img src="./icons/arrow-btn.svg" alt="arrow btn" />
+          Learn More<img
+            width="1"
+            height="1"
+            load="lazy"
+            src="./icons/arrow-btn.svg"
+            alt="arrow button"
+          />
         </button>
       </div>
-    </div>
-    <div class="appointment">
+    </section>
+    <section class="appointment">
       <div class="container">
-        <div class="form-wrap">
+        <div class="app-wrap">
           <div class="form-container">
             <h2 class="form-title title">Make an appointment</h2>
             <form name="form1" class="form-box">
               <input
-                class="appointment-form"
+                class="app-input"
                 type="text"
                 name="name"
                 required
                 placeholder="Name"
               />
               <input
-                class="appointment-form"
+                class="app-input"
                 type="email"
                 name="email"
                 required
                 placeholder="Email"
               />
               <input
-                class="appointment-form"
+                class="app-input"
                 type="tel"
                 name="tel"
                 required
                 placeholder="Phone Number"
               />
-              <input
-                class="appointment-form"
-                type="text"
-                name="service"
-                required
-                placeholder="Select Service"
-              />
+              <select class="app-input" name="variants" required>
+                <option value="Select Service" selected disabled>
+                  Select Service
+                </option>
+                <option value="Car Mechanic">Car Mechanic</option>
+                <option value="Auto Electrician">Auto Electrician</option>
+                <option value="Straightener">Straightener</option>
+                <option value="Tire Fitter">Tire Fitter</option>
+              </select>
               <textarea
-                class="appointment-form comment-form"
+                class="app-input comments-input"
                 type="comment"
                 name="comment"
                 placeholder="Tell us about the car needing service(s)"
               ></textarea>
-              <button class="button btn-medium appointment-btn" type="submit">
-                Make an Appointment<img src="./icons/arrow-btn.svg" alt="" />
+              <button
+                class="button btn-medium app-btn"
+                width="1"
+                height="1"
+                load="lazy"
+                type="submit"
+              >
+                Make an Appointment<img
+                  src="./icons/arrow-btn.svg"
+                  alt="arrow button"
+                />
               </button>
             </form>
           </div>
-          <div class="appointment-inf">
-            <h2 class="appointment-title title">
+          <div class="app-inf">
+            <h2 class="app-title light-title title">
               Maxime placeat facere possimus omnis
             </h2>
-            <h2 class="appointment-number title">17k</h2>
-            <p class="appointment-subtitle subtitle">
+            <h3 class="app-number title">17k</h3>
+            <h4 class="app-subtitle subtitle">
               customers served (and counting)
-            </p>
+            </h4>
           </div>
         </div>
       </div>
-    </div>
-    <div class="gallery">
+    </section>
+    <section class="gallery">
       <div class="container">
         <div class="gallery-wrap">
           <div class="container square-contents">
-            <p class="tag">gallery & Live Streams</p>
-            <h2 class="gallery-title title">Check out our hard workers</h2>
+            <h2 class="tag">gallery & Live Streams</h2>
+            <h3 class="gallery-title title">Check out our hard workers</h3>
             <nav class="gallery-box gallery-thumbs">
               <ul class="gallery-nav text">
                 <li><a href="#">Gallery</a></li>
@@ -288,19 +331,25 @@
                 <li class="circle"><a href="#">Live stream: Bay 3</a></li>
               </ul>
             </nav>
-            <img src="./img/Stream.webp" alt="" />
           </div>
+          <img
+            src="./img/Stream.webp"
+            width="1"
+            height="1"
+            load="lazy"
+            alt="Live Stream Image 1"
+          />
         </div>
       </div>
-    </div>
-    <div class="customers">
+    </section>
+    <section class="customers">
       <div class="container">
         <div class="customers-wrap">
           <div class="customeers-inf">
-            <p class="tag">Our customers</p>
-            <h2 class="customers-title title">
+            <h2 class="tag">Our customers</h2>
+            <h3 class="customers-title title">
               Illum qui dolorem eum quo voluptas ut distinctio
-            </h2>
+            </h3>
           </div>
           <div class="customers-box">
             <p class="customers-text text">
@@ -310,8 +359,14 @@
               enim dolore.”
             </p>
             <div class="customers-user">
-              <img src="./img/user-logo.webp" alt="" />
-              <h2 class="subtitle">Cullen Bohannon</h2>
+              <img
+                width="1"
+                height="1"
+                load="lazy"
+                src="./img/user-logo.webp"
+                alt=""
+              />
+              <h4 class="subtitle">Cullen Bohannon</h4>
             </div>
           </div>
           <div class="customers-box">
@@ -322,89 +377,162 @@
               aspernatur.”
             </p>
             <div class="customers-user">
-              <img src="./img/user-logo2.webp" alt="" />
-              <h2 class="subtitle">Jennifer Thomas</h2>
+              <img
+                width="1"
+                height="1"
+                load="lazy"
+                src="./img/user-logo2.webp"
+                alt=""
+              />
+              <h4 class="subtitle">Jennifer Thomas</h4>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="impact">
+    </section>
+    <section class="impact">
       <div class="container">
         <div class="impact-inf-wrap">
           <div class="impact-inf">
-            <p class="impact-tag tag">Our impact</p>
-            <h2 class="impact-title title">
+            <h2 class="impact-tag tag">Our impact</h2>
+            <h3 class="impact-title light-title title">
               Nemo enim ipsam voluptatem quia voluptas
-            </h2>
+            </h3>
           </div>
-          <img src="./img/car-img.webp" alt="" />
+          <img
+            src="./img/car-img.webp"
+            width="1"
+            height="1"
+            load="lazy"
+            alt="Impact Car Image"
+          />
         </div>
         <div class="impact-prices-wrap">
           <div class="impact-prices">
-            <img src="./icons/impact-icon1.svg" alt="" />
+            <img
+              width="1"
+              height="1"
+              load="lazy"
+              src="./icons/impact-icon1.svg"
+              alt="Impact Oil Icon"
+            />
             <div class="impact-prices-inf">
-              <h2 class="impact-prices-title title">16k+</h2>
+              <h4 class="impact-prices-title title">16k+</h4>
               <p class="light-text">Oil changes</p>
             </div>
           </div>
           <div class="impact-prices">
-            <img src="./icons/impact-icon2.svg" alt="" />
+            <img
+              width="1"
+              height="1"
+              load="lazy"
+              src="./icons/impact-icon2.svg"
+              alt="Impact Transmission Icon"
+            />
             <div class="impact-prices-inf">
-              <h2 class="impact-prices-title title">13k+</h2>
+              <h4 class="impact-prices-title title">13k+</h4>
               <p class="light-text">Transmission repairs</p>
             </div>
           </div>
           <div class="impact-prices">
-            <img src="./icons/impact-icon3.svg" alt="" />
+            <img
+              width="1"
+              height="1"
+              load="lazy"
+              src="./icons/impact-icon3.svg"
+              alt="Impact Alignments Icons"
+            />
             <div class="impact-prices-inf">
-              <h2 class="impact-prices-title title">15k+</h2>
+              <h4 class="impact-prices-title title">15k+</h4>
               <p class="light-text">Alignments made</p>
             </div>
           </div>
           <div class="impact-prices">
-            <img src="./icons/impact-icon4.svg" alt="" />
+            <img
+              width="1"
+              height="1"
+              load="lazy"
+              src="./icons/impact-icon4.svg"
+              alt="Impact Engines Icon"
+            />
             <div class="impact-prices-inf">
-              <h2 class="impact-prices-title title">11 500+</h2>
+              <h4 class="impact-prices-title title">11 500+</h4>
               <p class="light-text">Engines repaired</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <div class="small-square">
           <h2 class="small-square-title title">
             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
           </h2>
-          <button class="button btn-medium" type="submit">
+          <button class="button btn-medium">
             Make an Appointment<img
+              width="1"
+              height="1"
+              load="lazy"
               src="./icons/arrow-btn.svg"
-              alt="arrow-btn"
+              alt="arrow button"
             />
           </button>
         </div>
         <div class="middle-footer">
           <div class="container middle-container">
             <div class="social-wrap">
-              <img src="./img/Logo-Dark.svg" alt="" />
+              <img
+                src="./img/Logo-Dark.svg"
+                width="175"
+                height="40"
+                load="lazy"
+                alt="Dark Footer Logo"
+              />
               <p class="social-text text">
                 This is a blurb about the company sed do eiusmod tempor
                 incididunt ut labore et dolore ex magna aliqua.
               </p>
               <div class="social-icons">
                 <a href="#">
-                  <img src="./icons/facebook.svg" alt="" />
+                  <img
+                    width="20"
+                    height="20"
+                    load="lazy"
+                    src="./icons/facebook.svg"
+                    alt="Facebook Link Logo"
+                    title="facebook"
+                  />
                 </a>
                 <a href="#">
-                  <img src="./icons/twitter.svg" alt="" />
+                  <img
+                    width="20"
+                    height="20"
+                    load="lazy"
+                    src="./icons/twitter.svg"
+                    alt="Twitter Link Logo"
+                    title="twitter"
+                  />
                 </a>
                 <a href="#">
-                  <img src="./icons/instagram.svg" alt="" />
+                  <img
+                    width="20"
+                    height="20"
+                    load="lazy"
+                    src="./icons/instagram.svg"
+                    alt="Instagram Link Logo"
+                    title="instagram"
+                  />
                 </a>
                 <a href="#">
-                  <img src="./icons/youtube.svg" alt="" />
+                  <img
+                    width="20"
+                    height="20"
+                    load="lazy"
+                    src="./icons/youtube.svg"
+                    alt="YouTube Link Logo"
+                    title="youtube"
+                  />
                 </a>
               </div>
             </div>
@@ -428,20 +556,30 @@
             <div class="contact-wrap">
               <h2 class="middle-title subtitle">Contact</h2>
               <div class="contact-box">
-                <ul class="contact-text">
+                <ul class="contact-links">
                   <li>
-                    <img src="./icons/locate-icon.svg" alt="" />321 Pikes Place
-                    Parkway Seattle, WA 54321
+                    <a
+                      href="https://goo.gl/maps/BFQRzR4sKBGGrwoy6"
+                      class="link1"
+                      target="_blank"
+                      >321 Pikes Place Parkway Seattle, WA 54321</a
+                    >
                   </li>
                   <li>
-                    <img src="./icons/smartphone.svg" alt="" />(555) 765-4321
+                    <a href="tel:555-765-4321" class="link2">(555) 765-4321</a>
                   </li>
                   <li>
-                    <img src="./icons/email.svg" alt="" />Info@company.com
+                    <a href="mailto:Info@company.com" class="link3"
+                      >Info@company.com</a
+                    >
                   </li>
                   <li>
-                    <img src="./icons/timer.svg" alt="" />Mon - Sat: 7:000
-                    am - 6:00 pm
+                    <a
+                      href="https://goo.gl/maps/BFQRzR4sKBGGrwoy6"
+                      class="link4"
+                      target="_blank"
+                      >Mon - Sat: 7:000 am - 6:00 pm</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -451,15 +589,14 @@
       </div>
       <div class="under-footer">
         <div class="container">
-          <div class="under-footer-wrap">
+          <div class="under-wrap">
             <p class="under-text">
               Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
             </p>
             <div class="under-links">
               <p class="under-text">© 2018 Company.</p>
-              <a href="#" class="under-link"
-                >Privacy Police | Terms & Conditions</a
-              >
+              <a href="#" class="under-link">Privacy Police</a>
+              <a href="#" class="under-link">Terms & Conditions</a>
             </div>
           </div>
         </div>
