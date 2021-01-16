@@ -470,7 +470,7 @@ h1 {
   background: var(--white) no-repeat center / 1200px 700px;
   margin: -100px 0;
   padding: 80px;
-  min-height: 700px;
+  height: 700px;
 }
 .about,
 .gallery {
@@ -555,13 +555,21 @@ h1 {
   background-color: var(--white);
 }
 
+.nav {
+  width: 550px;
+}
+
 .nav a {
   width: 100%;
+  padding: 20px 0px;
   white-space: nowrap;
-  padding: 25px;
   font-size: 14px;
   font-weight: 700;
   transition: 0.25s;
+}
+
+.nav > :nth-child(n + 1) {
+  padding-left: 30px;
 }
 
 .nav li {
@@ -601,27 +609,22 @@ h1 {
 
 .nav-control {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.searched {
-  border: 0;
-  padding: 10px;
-  border-bottom: 3px solid var(--action-color);
-  transition: 0.3s;
-  visibility: hidden;
+.nav-control > :nth-child(n + 2) {
+  padding-left: 20px;
+  margin-right: 30px;
 }
 
 .search-btn {
   cursor: pointer;
   border: 0;
   background: none;
-  padding: 15px;
 }
 
 .shopping-cart {
-  padding: 15px;
   margin-right: 10px;
 }
 /* ============================ NAVBAR END ================================= */
@@ -635,13 +638,15 @@ h1 {
 /* ============================ HERO END ================================= */
 
 /* ============================ ABOUT START ================================= */
-.about > img {
-  width: 850px;
+.about {
+  padding-bottom: 230px;
+}
+
+.about > .container > img {
+  width: 100%;
   height: 450px;
   object-fit: cover;
-  margin-top: -200px;
   background-color: var(--secondary-color);
-  z-index: 1;
 }
 
 .about-title {
@@ -664,7 +669,7 @@ h1 {
   width: 640px;
   height: 450px;
   z-index: 2;
-  transform: scale(1,-1);
+  transform: scale(1, -1);
   background: url("../img/bottom-right-deco.webp") no-repeat 0 0 / 640px 450px;
 }
 /* ============================ ABOUT END ================================= */
@@ -683,6 +688,7 @@ h1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .promise-box-inf {
@@ -811,7 +817,7 @@ h1 {
 .appointment {
   position: relative;
   background: url("../img/bottom-right-deco.webp") no-repeat 11% 82% / 640px
-  450px var(--secondary-color);
+    450px var(--secondary-color);
 }
 .appointment::before {
   content: "";
@@ -897,14 +903,14 @@ h1 {
 /* ============================ APPOINTMENT END ================================= */
 
 /* ============================ GALLERY START ================================= */
-.slider{
-  width: 850px;
+.slider {
+  width: 90%;
   height: 500px;
   margin-top: -270px;
   position: relative;
 }
 
-.slider::before{
+.slider::before {
   content: "Live";
   top: 30px;
   right: 32px;
@@ -918,7 +924,7 @@ h1 {
 }
 
 .slider img {
-  width: 850px;
+  width: 100%;
   height: 500px;
   object-fit: cover;
 }
@@ -930,12 +936,15 @@ h1 {
   justify-content: space-between;
 }
 
+.gallery-title {
+  margin-bottom: 60px;
+}
+
 .gallery-nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid var(--gray);
-  margin: 60px 0;
 }
 
 .gallery-nav li {
@@ -959,7 +968,7 @@ h1 {
 }
 
 .gallery-nav > li > a:hover::before {
-  width: 150%;
+  width: 100%;
 }
 
 .gallery-nav a:hover {
@@ -996,6 +1005,7 @@ h1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .customers-box {
@@ -1034,17 +1044,13 @@ h1 {
 
 .impact-inf-wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
-.impact-inf {
-  padding-top: 110px;
-}
-
 .impact-inf-wrap img {
-  width: 520px;
-  height: 345px;
+  width: 510px;
+  height: 342px;
   object-fit: cover;
   margin-top: -70px;
 }
@@ -1230,3 +1236,60 @@ h1 {
 }
 /* ============================ UNDER FOOTER END ================================= */
 /* ============================ FOOTER END ================================= */
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+  .header-nav-inf:nth-child(n + 2) {
+    padding: 0 25px;
+  }
+  .about > img {
+    width: 670px;
+  }
+  .promise-wrap,
+  .promise-box {
+    justify-content: space-around;
+  }
+  .card-wrap {
+    justify-content: space-evenly;
+  }
+  .customers-wrap {
+    justify-content: center;
+  }
+  .customers-title {
+    width: 100%;
+  }
+  .customers-box {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  .impact-prices-wrap {
+    flex-wrap: wrap;
+  }
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+/* // XX-Small devices (portrait phones (iPhone 5/5s, SE), less than 321px) */
+@media (max-width: 320px) {
+}
