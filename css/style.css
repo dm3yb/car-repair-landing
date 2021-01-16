@@ -901,6 +901,20 @@ h1 {
   width: 850px;
   height: 500px;
   margin-top: -270px;
+  position: relative;
+}
+
+.slider::before{
+  content: "Live";
+  top: 30px;
+  right: 32px;
+  position: absolute;
+  width: 50px;
+  height: 33px;
+  padding: 10px;
+  color: var(--white);
+  background: var(--green);
+  z-index: 100;
 }
 
 .slider img {
