@@ -1279,41 +1279,42 @@ h1 {
   .container {
     max-width: 720px;
   }
-  .promise-box:nth-child(2){
+  .promise-box:nth-child(2) {
     flex-direction: row-reverse;
   }
-  .app-wrap{
+  .app-wrap {
     justify-content: space-around;
     flex-wrap: wrap-reverse;
   }
-  .video-disc{
+  .video-disc {
     align-items: center;
   }
-  .play-btn{
+  .play-btn {
     transform: translateX(-130px);
   }
-  .app-inf{
+  .app-inf {
     margin-left: 0;
     margin-bottom: 10%;
   }
-  .gallery-nav{
+  .gallery-nav {
     font-size: 14px;
   }
-  .impact-inf-wrap{
+  .impact-inf-wrap {
     justify-content: center;
     flex-wrap: wrap-reverse;
   }
-  .impact-inf{
+  .impact-inf {
     margin-top: 30px;
   }
-  .impact-inf-wrap img, .impact-inf{
+  .impact-inf-wrap img,
+  .impact-inf {
     width: 100%;
   }
-  .middle-container{
+  .middle-container {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .middle-container>:nth-child(3){
+  .middle-container > :nth-child(3) {
     margin-top: 30px;
   }
 }
@@ -1322,6 +1323,30 @@ h1 {
   .container {
     max-width: 100%;
     padding: 0 15px;
+  }
+
+  .promise-box:nth-child(2){
+    flex-direction: unset;
+  }
+  .cards-inf-wrap,
+  .promise-inf,
+  .about-inf,
+  .gallery-inf,
+  .customeers-inf {
+    text-align: center;
+  }
+  .gallery-nav {
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  .customers-box{
+    width: 100%;
+  }
+  .square-contents {
+    padding: 50px;
+  }
+  .small-square > .button.btn-medium {
+    width: 40%;
   }
 }
 /* // X-Small devices (portrait phones, less than 576px) */
