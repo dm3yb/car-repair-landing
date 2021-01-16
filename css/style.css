@@ -897,11 +897,16 @@ h1 {
 /* ============================ APPOINTMENT END ================================= */
 
 /* ============================ GALLERY START ================================= */
-.gallery-wrap > img {
+.slider{
+  width: 850px;
+  height: 500px;
+  margin-top: -270px;
+}
+
+.slider img {
   width: 850px;
   height: 500px;
   object-fit: cover;
-  margin-top: -270px;
 }
 
 .gallery-wrap {

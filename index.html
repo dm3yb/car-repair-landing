@@ -356,13 +356,37 @@
               </ul>
             </nav>
           </div>
-          <img
-            src="./img/Stream.webp"
-            width="1"
-            height="1"
-            load="lazy"
-            alt="Live Stream Image 1"
-          />
+          <div class="swiper-container slider" id="slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./img/Stream.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  alt="Live Stream Image 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./img/Stream.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  alt="Live Stream Image 2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./img/Stream.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  alt="Live Stream Image 3"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -626,5 +650,17 @@
         </div>
       </div>
     </footer>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const slider = new Swiper("#slider", {
+        speed: 500,
+        loop: true,
+        autoplay: true,
+      });
+    </script>
   </body>
 </html>
