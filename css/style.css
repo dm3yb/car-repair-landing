@@ -466,20 +466,6 @@ h1 {
   transform: translateY(30%);
   background: url("../icons/tag.svg") no-repeat center / 20px 20px;
 }
-.square-contents {
-  background: var(--white) no-repeat center / 1200px 700px;
-  margin: -100px 0;
-  padding: 80px;
-  height: 700px;
-}
-.about,
-.gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
 /* ============================ COMMON END ================================= */
 
 /* ============================ HEADER START ================================= */
@@ -488,6 +474,17 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.mobile-header{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-btn{
+  position: relative;
+  z-index: 9999;
 }
 
 .header,
@@ -638,15 +635,25 @@ h1 {
 /* ============================ HERO END ================================= */
 
 /* ============================ ABOUT START ================================= */
-.about {
-  padding-bottom: 230px;
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  margin-top: -100px;
 }
 
-.about > .container > img {
-  width: 100%;
-  height: 450px;
-  object-fit: cover;
-  background-color: var(--secondary-color);
+.about-wrap>.container{
+  padding: 80px 80px 0 80px;
+}
+
+.about-wrap img{
+  width: 85%;
+  height: 100%;
+  margin-bottom: -100px;
 }
 
 .about-title {
@@ -660,23 +667,12 @@ h1 {
 .about-square {
   position: relative;
 }
-
-.about-square::after {
-  content: "";
-  top: 0;
-  right: 0;
-  position: absolute;
-  width: 640px;
-  height: 450px;
-  z-index: 2;
-  transform: scale(1, -1);
-  background: url("../img/bottom-right-deco.webp") no-repeat 0 0 / 640px 450px;
-}
 /* ============================ ABOUT END ================================= */
 
 /* ============================ PROMISE START ================================= */
 .promise {
-  padding: 110px 0;
+  padding-top: 210px;
+  padding-bottom: 110px;
 }
 
 .promise-title {
@@ -906,8 +902,8 @@ h1 {
 .slider {
   width: 90%;
   height: 500px;
-  margin-top: -270px;
   position: relative;
+  margin-bottom: -100px;
 }
 
 .slider::before {
@@ -925,7 +921,7 @@ h1 {
 
 .slider img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -934,6 +930,14 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  margin-top: -100px;
+}
+
+.gallery-wrap > .container {
+  padding: 80px;
 }
 
 .gallery-title {
@@ -993,7 +997,7 @@ h1 {
 
 /* ============================ CUSTOMERS START ================================= */
 .customers {
-  padding-top: 120px;
+  padding-top: 220px;
   padding-bottom: 210px;
 }
 
@@ -1118,7 +1122,6 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
-
 /* ============================ MIDDLE SOCIAL START ================================= */
 .social-wrap {
   width: 235px;
@@ -1296,9 +1299,6 @@ h1 {
     margin-left: 0;
     margin-bottom: 10%;
   }
-  .gallery-nav {
-    font-size: 14px;
-  }
   .impact-inf-wrap {
     justify-content: center;
     flex-wrap: wrap-reverse;
@@ -1324,8 +1324,7 @@ h1 {
     max-width: 100%;
     padding: 0 15px;
   }
-
-  .promise-box:nth-child(2){
+  .promise-box:nth-child(2) {
     flex-direction: unset;
   }
   .cards-inf-wrap,
@@ -1336,10 +1335,9 @@ h1 {
     text-align: center;
   }
   .gallery-nav {
-    font-size: 12px;
     justify-content: space-between;
   }
-  .customers-box{
+  .customers-box {
     width: 100%;
   }
   .square-contents {
@@ -1351,6 +1349,65 @@ h1 {
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  h1 {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+  }
+  .hero-btn{
+    margin: 0 auto;
+  }
+  .about-title{
+    font-size: 30px;
+  }
+  .about-wrap>.container{
+    text-align: center;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .app-input {
+    width: 100%;
+  }
+  .video-title {
+    width: 100%;
+  }
+  .play-btn {
+    transform: translateX(-100px);
+  }
+  .app-btn {
+    margin-left: 0;
+  }
+  .gallery-nav {
+    flex-direction: column;
+  }
+  .small-square {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .small-square > .button.btn-medium {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .impact-prices-wrap {
+    justify-content: center;
+  }
+  .impact-prices-wrap > :nth-child(n + 2) {
+    margin-top: 20px;
+  }
+  .middle-container {
+    justify-content: center;
+  }
+  .middle-container > :nth-child(n + 2) {
+    margin-top: 20px;
+  }
+  .exlore-links > :nth-child(n + 2) {
+    margin-right: 60px;
+  }
+  .under-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 /* // XX-Small devices (portrait phones (iPhone 5/5s, SE), less than 321px) */
 @media (max-width: 320px) {
